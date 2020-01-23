@@ -1,0 +1,127 @@
+<html><head><meta charset="utf-8"/><title>Test Report</title><style type="text/css">html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+body {
+	padding: 1rem;
+	font-size: 0.85rem;
+}
+#jesthtml-content {
+	margin-bottom: 2rem;
+}
+header {
+	display: flex;
+	align-items: center;
+}
+#title {
+	margin: 0;
+	flex-grow: 1;
+}
+#logo {
+	height: 4rem;
+}
+#timestamp {
+	font-weight: bold;
+	color: #666;
+	margin-bottom: 0.5rem;
+}
+#summary {
+	color: #999;
+	margin-bottom: 1rem;
+}
+.suite-info {
+	padding: 1rem;
+	background-color: #eee;
+	border-bottom: 2px solid #999;
+	color: #999;
+	display: flex;
+	align-items: center;
+}
+.suite-info .suite-path {
+	font-weight: bold;
+	word-break: break-all;
+	flex-grow: 1;
+}
+.suite-info .suite-time {
+	margin-left: 0.5rem;
+	padding: 0.2rem 0.3rem;
+	font-size: 0.75rem;
+}
+.suite-info .suite-time.warn {
+	background-color: #D8000C;
+	color: #fff;
+}
+.suite-table {
+	width: 100%;
+	font-size: 0.85rem;
+	margin-bottom: 1em;
+}
+.suite-table td {
+	padding: 0.5rem;
+}
+.suite-table tr.passed {
+	background-color: #DFF2BF;
+	color: #4F8A10;
+}
+.suite-table tr.pending {
+	background-color: #FEEFB3;
+	color: #9F6000;
+}
+.suite-table tr.failed {
+	background-color: #FFBABA;
+	color: #D8000C;
+}
+.suite-table td {
+	font-size: 0.85rem;
+	border-bottom: 1px solid #aaa;
+	vertical-align: top;
+}
+.suite-table td.suite {
+	font-weight: bold;
+	width: 20%;
+}
+.suite-table td.test {
+	font-style: italic;
+	width: 60%;
+}
+.suite-table td.test .failureMsg {
+	font-size: 1rem;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.suite-table td.result {
+	width: 20%;
+	text-align: right;
+}
+
+/* CONSOLE LOGS */
+.suite-consolelog {
+	margin-bottom: 2rem;
+	padding: 1rem;
+	background-color: #efefef;
+}
+.suite-consolelog-header {
+	font-weight: bold;
+}
+.suite-consolelog-item {
+	padding: 0.5rem;
+}
+.suite-consolelog-item pre {
+	margin: 0;
+}
+.suite-consolelog-item-origin {
+	color: #777;
+	font-weight: bold;
+}
+.suite-consolelog-item-message {
+	color: #000;
+	font-size: 1rem;
+	padding: 0 0.5rem;
+}
+</style></head><body><div id="jesthtml-content"><header><h1 id="title">Test Report</h1></header><div id="metadata-container"><div id="timestamp">Start: 2020-01-23 10:22:11</div><div id="summary">33 tests -- 33 passed / 0 failed / 0 pending</div></div><div class="suite-info"><div class="suite-path">C:\programming\simple-restfulapi-server\src\__tests__\initial-test.test.js</div><div class="suite-time">3.772s</div></div><table class="suite-table" cellspacing="0" cellpadding="0"><tr class="passed"><td class="suite">Sample Test</td><td class="test">should that true === true</td><td class="result">passed in 0.003s</td></tr></table><div class="suite-info"><div class="suite-path">C:\programming\simple-restfulapi-server\src\__tests__\users-api.test.js</div><div class="suite-time warn">7.415s</div></div><table class="suite-table" cellspacing="0" cellpadding="0"><tr class="passed"><td class="suite">/users &gt; POST /</td><td class="test">Creates user</td><td class="result">passed in 0.086s</td></tr><tr class="passed"><td class="suite">/users &gt; POST /</td><td class="test">Username has no space (trim)</td><td class="result">passed in 0.023s</td></tr><tr class="passed"><td class="suite">/users &gt; POST /</td><td class="test">Password has no space (trim)</td><td class="result">passed in 0.022s</td></tr><tr class="passed"><td class="suite">/users &gt; POST /</td><td class="test">Email has no space (trim)</td><td class="result">passed in 0.023s</td></tr><tr class="passed"><td class="suite">/users &gt; POST /</td><td class="test">Fails if username already exists</td><td class="result">passed in 0.032s</td></tr><tr class="passed"><td class="suite">/users &gt; POST /</td><td class="test">Fails without required params</td><td class="result">passed in 0.006s</td></tr><tr class="passed"><td class="suite">/users &gt; POST /</td><td class="test">Fails with invalid username</td><td class="result">passed in 0.032s</td></tr><tr class="passed"><td class="suite">/users &gt; POST /</td><td class="test">Fails with invalid password</td><td class="result">passed in 0.038s</td></tr><tr class="passed"><td class="suite">/users &gt; POST /</td><td class="test">Fails with invalid email</td><td class="result">passed in 0.024s</td></tr><tr class="passed"><td class="suite">/users &gt; GET /</td><td class="test">Succeeds to get all users</td><td class="result">passed in 0.045s</td></tr><tr class="passed"><td class="suite">/users &gt; GET /</td><td class="test">Succeeds to search for the user by username or email</td><td class="result">passed in 0.072s</td></tr><tr class="passed"><td class="suite">/users &gt; GET /</td><td class="test">Succeeds to sort users</td><td class="result">passed in 0.058s</td></tr><tr class="passed"><td class="suite">/users &gt; GET /</td><td class="test">Succeeds pagination</td><td class="result">passed in 0.095s</td></tr><tr class="passed"><td class="suite">/users &gt; GET /[id]</td><td class="test">Succeeds to fetch User</td><td class="result">passed in 0.027s</td></tr><tr class="passed"><td class="suite">/users &gt; GET /[id]</td><td class="test">Fails 400 error with invalid id</td><td class="result">passed in 0.004s</td></tr><tr class="passed"><td class="suite">/users &gt; GET /[id]</td><td class="test">Fails 404 error when its failed to find user</td><td class="result">passed in 0.006s</td></tr><tr class="passed"><td class="suite">/users &gt; PUT /[id]</td><td class="test">Succeeds to create a user if there is no user</td><td class="result">passed in 0.055s</td></tr><tr class="passed"><td class="suite">/users &gt; PUT /[id]</td><td class="test">Fails 400 error with invalid object id</td><td class="result">passed in 0.004s</td></tr><tr class="passed"><td class="suite">/users &gt; PUT /[id]</td><td class="test">Succeeds to modify</td><td class="result">passed in 0.041s</td></tr><tr class="passed"><td class="suite">/users &gt; PUT /[id]</td><td class="test">Fails without required params</td><td class="result">passed in 0.005s</td></tr><tr class="passed"><td class="suite">/users &gt; PUT /[id]</td><td class="test">Fails with invalid params</td><td class="result">passed in 0.028s</td></tr><tr class="passed"><td class="suite">/users &gt; PUT /[id]</td><td class="test">Username has no space (trim)</td><td class="result">passed in 0.031s</td></tr><tr class="passed"><td class="suite">/users &gt; PUT /[id]</td><td class="test">Password has no space (trim)</td><td class="result">passed in 0.028s</td></tr><tr class="passed"><td class="suite">/users &gt; PUT /[id]</td><td class="test">Email has no space (trim)</td><td class="result">passed in 0.026s</td></tr><tr class="passed"><td class="suite">/users &gt; PUT /[id]</td><td class="test">Fails if username already exists</td><td class="result">passed in 0.036s</td></tr><tr class="passed"><td class="suite">/users &gt; DELETE /[id]</td><td class="test">Succeeds to delete a user</td><td class="result">passed in 0.048s</td></tr><tr class="passed"><td class="suite">/users &gt; DELETE /[id]</td><td class="test">Fails with invalid id</td><td class="result">passed in 0.039s</td></tr><tr class="passed"><td class="suite">/users &gt; DELETE /[id]</td><td class="test">Returns status code 200 when try to delete non-existence user</td><td class="result">passed in 0.042s</td></tr><tr class="passed"><td class="suite">/users &gt; PATCH [/id]</td><td class="test">Succeeds to partial update</td><td class="result">passed in 0.066s</td></tr><tr class="passed"><td class="suite">/users &gt; PATCH [/id]</td><td class="test">Succeeds with non params</td><td class="result">passed in 0.036s</td></tr><tr class="passed"><td class="suite">/users &gt; PATCH [/id]</td><td class="test">Fails with invalid id</td><td class="result">passed in 0.004s</td></tr><tr class="passed"><td class="suite">/users &gt; PATCH [/id]</td><td class="test">Not found error if there is no user</td><td class="result">passed in 0.017s</td></tr></table></div></body></html>

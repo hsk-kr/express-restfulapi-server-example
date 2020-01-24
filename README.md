@@ -4,6 +4,17 @@
 
 A Restful(REpresentational State Transfer) API Server is a server that provides application interfaces that uses HTTP request to GET, PUT, POST and DELETE data.
 
+## How To Start
+
+<sub>\* Before you execute, you must have installed docker</sub>
+
+```
+cd simple-restfulapi-server
+docker-compose up
+```
+
+then you can access to the web server by 80 port.
+
 ## Scripts
 
 | Command    | Description                                        |

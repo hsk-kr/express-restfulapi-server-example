@@ -1,0 +1,22 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: C:\programming\simple-restfulapi-server\Dockerfile
+    depends_on:
+      - mongo
+    links:
+      - 'mongo:database'
+  mongo:
+    image: mongo
+    ports:
+      - '27017:27017'
+  nginx:
+    build:
+      context: .
+      dockerfile: C:\programming\simple-restfulapi-server\nginx\Dockerfile
+    links:
+      - 'web:app'
+    ports:
+      - '80:80'

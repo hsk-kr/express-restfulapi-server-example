@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon dist/bin/www.js",
+    "publish": "npm-run-all clean build start",
+    "start": "cross-env NODE_ENV=production node dist/bin/www.js",
     "build": "cross-env NODE_ENV=production babel src --out-dir dist --ignore **/*/*.test.js",
     "dev": "cross-env NODE_ENV=development nodemon --exec babel-node src/bin/www.js",
     "test": "cross-env NODE_ENV=test jest --testTimeout 1000",

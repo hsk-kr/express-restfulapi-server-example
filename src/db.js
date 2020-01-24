@@ -31,7 +31,7 @@ const connectdb = async () => {
     return dbconn;
   } catch (err) {
     console.log(`failed to connect to mongodb. message:${err}`);
-    return null;
+    throw err;
   }
 };
 

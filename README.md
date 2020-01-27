@@ -6,7 +6,7 @@ A Restful(REpresentational State Transfer) API Server is a server that provides 
 
 ## How To Start
 
-<sub>\* Before you execute, you must have installed docker</sub>
+<sub>\* Before you execute, you must have installed docker and you must change a dockerfile path in docker-compose.yml</sub>
 
 ```
 cd simple-restfulapi-server
